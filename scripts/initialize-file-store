@@ -6,8 +6,8 @@ var fs = require('fs')
 ,   dirPath = path.join(__dirname, '../data')
 ,   filePath = path.join(dirPath, 'data.json')
 ,   defaultData = [
-      { "title": "Sample Todo", "description": "This is a sample description...", "timestamp": 1414528544235},
-      { "title": "Sample Todo 2", "description": "This is another sample description...", "timestamp": 1414528754979}
+      { "description": "Sample Todo", "timestamp": 1414528544235},
+      { "description": "Sample Todo 2", "timestamp": 1414528754979}
     ]
 ,   initializeFileStoreLabel = '[initialize-file-store]'
 
