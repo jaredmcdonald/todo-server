@@ -77,9 +77,10 @@ router.put('/:id', function (req, res) {
 router.post('/create', function (req, res) {
   var todo = req.body
   ,   now = Date.now()
-  
+
   todo.lastUpdated = now
   todo.created = now
+  todo.completed = false
 
   fileStore.create(todo, function (err, id) {
     if (err) {
