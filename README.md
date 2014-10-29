@@ -1,0 +1,36 @@
+todo-server
+===========
+
+todo REST server. for now, uses a json file for storage... might add a DB later
+
+## setup
+
+    npm install
+    
+## starting locally
+
+    npm start
+    
+creates `data/data.json` with some sample data if it doesn't already exist
+
+## routes
+
+### GET `/todos`
+
+Returns all todos.
+
+### POST `/todos/create`
+
+Post JSON for a new todo. If succesful, returns `201 Created` response code and url of newly created resource in body (e.g. `/todos/3`)
+
+### GET `/todos/<id>`
+
+Returns todo at index `<id>` if it exists
+
+### PUT `/todos/<id>`
+
+Update todo at `/todos/<id>`. If no resource is found at that url, returns `404 Not Found`; otherwise, `200 OK`
+
+### DELETE `/todos/<id>`
+
+Delete todo at `/todos/<id>`. If no resource is found, returns `404 Not Found`; otherwise, `200 OK`
