@@ -8,7 +8,7 @@ todo REST server; uses mongodb for persistence
 make sure you have [mongodb installed](http://docs.mongodb.org/manual/installation/) and `mongod` running, then
 
     npm install
-    
+
 ## start it up
 
     npm start
@@ -27,9 +27,9 @@ Post JSON for a new todo. If succesful, returns `201 Created` response code and 
 
 Returns todo at index `<id>` if it exists
 
-### PUT `/todos/<id>`
+### PATCH `/todos/<id>`
 
-Update todo at `/todos/<id>`. If no resource is found at that url, returns `404 Not Found`; otherwise, `200 OK`
+Update specified fields of `/todos/<id>`. If no resource is found at that url, returns `404 Not Found`; otherwise, `200 OK`
 
 ### DELETE `/todos/<id>`
 

@@ -63,7 +63,7 @@ module.exports = function (models) {
       })
   })
 
-  router.put('/:id', function (req, res) {
+  router.patch('/:id', function (req, res) {
     var todo = req.body
     todo.lastUpdated = Date.now()
     delete todo._id // will throw mongo exception if you try to 'modify' id
