@@ -1,17 +1,17 @@
 todo-server
 ===========
 
-todo REST server. for now, uses a json file for storage... might add a DB later
+todo REST server; uses mongodb for persistence
 
 ## setup
 
+make sure you have [mongodb installed](http://docs.mongodb.org/manual/installation/) and `mongod` running, then
+
     npm install
     
-## starting locally
+## start it up
 
     npm start
-    
-creates `data/data.json` with some sample data if it doesn't already exist
 
 ## routes
 
